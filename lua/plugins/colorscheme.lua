@@ -1,12 +1,13 @@
 return {
-  { "LazyVim/LazyVim", opts = {
-    colorscheme = "tokyonight",
-  } },
-
   {
     "folke/tokyonight.nvim",
     opts = {
       style = "night",
+      terminal_colors = false,
     },
   },
+
+  { "LazyVim/LazyVim", opts = {
+    colorscheme = "tokyonight",
+  } },
 }
