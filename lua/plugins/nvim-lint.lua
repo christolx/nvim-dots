@@ -1,11 +1,11 @@
-local HOME = os.getenv("HOME")
+local CONFIG = vim.fn.stdpath("config")
 return {
   "mfussenegger/nvim-lint",
   optional = true,
   opts = {
     linters = {
       ["markdownlint-cli2"] = {
-        args = { "--config", HOME .. "/.markdownlint-cli2.yaml", "--" },
+        args = { "--config", CONFIG .. "/.markdownlint-cli2.yaml", "--" },
       },
     },
   },
