@@ -17,3 +17,6 @@ vim.opt.breakindent = true
 vim.opt.showbreak = "↪ "
 vim.opt.breakindentopt = "shift:2"
 vim.opt.cpoptions:append("n")
+
+-- Disable spell checking
+vim.opt.spell = false
