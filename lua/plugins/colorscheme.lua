@@ -22,6 +22,12 @@ return {
       },
 
       highlights = {
+
+        -- wrap line break symbol color
+        NonText = {
+          fg = "#c9cbff",
+        },
+
         -- main diagnostic warning color
         DiagnosticWarn = { fg = "${my_warn}" },
 

@@ -9,3 +9,11 @@ vim.opt.clipboard = ""
 vim.g.lazyvim_python_lsp = "ty"
 -- Set to "ruff_lsp" to use the old LSP implementation version.
 vim.g.lazyvim_python_ruff = "ruff"
+
+-- Improve indentation during line wraps
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.breakindent = true
+vim.opt.showbreak = "↪ "
+vim.opt.breakindentopt = "shift:2"
+vim.opt.cpoptions:append("n")
