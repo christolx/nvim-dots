@@ -18,6 +18,7 @@ return {
       colors = {
         my_warn = "#e5c07b",
         my_warn_bg = "#2b2518",
+        my_inlay = "#6b7280", -- pick color
       },
 
       highlights = {
@@ -41,6 +42,12 @@ return {
 
         -- floating diagnostic window warning text
         DiagnosticFloatingWarn = { fg = "${my_warn}" },
+
+        LspInlayHint = {
+          fg = "${my_inlay}",
+          bg = "NONE",
+          italic = true, -- optional
+        },
       },
     },
   },
